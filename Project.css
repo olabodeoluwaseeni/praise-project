@@ -1,0 +1,120 @@
+.container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+}
+
+.container input:checked ~ .checkmark {
+  background-color: #2196f3;
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.container .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  transform: rotate(45deg);
+}
+
+#body {
+  background-color: wheat;
+}
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+#register {
+  text-align: center;
+  font-family: "Trirong", sans-serif;
+  font-size: 50px;
+}
+
+.bb {
+  background-color: #f5f5f5;
+}
+
+#h3 {
+  font-family: "Audiowide", sans-serif;
+  text-align: center;
+  color: black;
+}
+
+#univaciti {
+  font-family:  "Audiowide", sans-serif;
+  text-align: center;
+  font-size: 50px;
+}
+
+#intro {
+  font-family: "Trirong", serif;
+}
+
+#list{
+  font-family: "Trirong", serif;
+}
+
+#Form {
+  font-family: "Sofia", sans-serif;
+  text-align: center;
+  font-size: 50px;
+}
+#qualify {
+  font-family:  "Trirong", sans-serif;
+}
+
+#congrats {
+  font-family: "Sofia", sans-serif;
+}
+
+#note {
+  font-weight: bolder;
+}
+
+#word {
+  font-family:  "Trirong", sans-serif;
+}
